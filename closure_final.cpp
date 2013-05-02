@@ -1,6 +1,6 @@
 /*
  given a lisp like expression yet some parentheses don't match.
- find the longest substring's non-space length.
+ find the parenthesis-matching longest substring's non-space length.
  e.g.
  [](abc {] aoij())
  -> 6
