@@ -16,14 +16,14 @@ inline bool cordinate_valid(int x, int y){
 }
 
 
-void destroy_field(int x, int y, int t){
+inline void destroy_field(int x, int y, int t){
     if (cordinate_valid(x, y) && field[x][y] > t)
         field[x][y] = t;
 }
 
 std::queue<QueueEntry> entries;
 
-void try_add_entry(int t, int x, int y){
+inline void try_add_entry(int t, int x, int y){
     if (cordinate_valid(x, y) &&
         (x >= 302 || y >= 302 || field[x][y] > t))
         entries.push(QueueEntry(t,x,y));

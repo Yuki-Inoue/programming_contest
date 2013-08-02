@@ -10,9 +10,7 @@ long A[100001];
 
 
 inline long intersection(long a, long b, long s, long t){
-    long candidate =
-    std::min(b,t) - std::max(a,s) + 1;
-    return candidate >= 0 ? candidate : 0;
+    return std::max(std::min(b,t) - std::max(a,s) + 1, 0L);
 }
 
 

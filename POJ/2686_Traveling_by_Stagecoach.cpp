@@ -52,11 +52,9 @@ int main(){
         for (int i=0; i< 1<<n; ++i)
             min_d = std::min(min_d, dp[i][b]);
 
-        if (min_d == DISTANCE_MAX) {
+        if (min_d == DISTANCE_MAX)
             std::cout << "Impossible" << std::endl;
-        }
-        else {
+        else
             std::cout << min_d << std::endl;
-        }
     }
 }

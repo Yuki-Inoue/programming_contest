@@ -32,9 +32,8 @@ int main(){
         }
 
         sort(positions.begin(), positions.end());
-        for (int i=0; i<N; ++i) {
+        for (int i=0; i<N; ++i)
             positions[i] += 0.02*R*i;
-        }
 
         for (int i=0; i<positions.size()-1; ++i)
             printf("%.2f ", positions[i]);

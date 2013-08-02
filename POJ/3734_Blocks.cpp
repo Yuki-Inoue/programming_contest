@@ -8,7 +8,7 @@ int memo[32]; // 2^(2^i)
 int exp2(long n){
     int prod = 1;
     for (int i=0; i<31; ++i)
-        if ((1<<i) & n)
+        if (1<<i & n)
             prod = (long) prod * memo[i] % modulo;
     return prod;
 }
